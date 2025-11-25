@@ -1144,7 +1144,7 @@ const communities = [
       "Fun AI exploration through games, projects, and hands-on activities that make complex concepts simple.",
     ageRange: "Ages 6-16",
     bgImage: "/images/communities/age 6-8.jpg",
-    href: "/communities/ai4kids",
+    href: "/programs/ai4kids",
   },
   {
     id: "kids-chat-room",
@@ -1154,18 +1154,7 @@ const communities = [
       "Safe, moderated environment for building emotional intelligence and lasting friendships.",
     ageRange: "Ages 5-16",
     bgImage: "/images/communities/age 5-8.jpg",
-    href: "/communities/kids-chat-room",
-  },
-  {
-    id: "gmkr",
-    title: "Get My Kid(s) to Read 📚✨",
-    subtitle: "Premium Reading Club",
-    description:
-      "Structured reading program with phonics games, storytelling, and interactive learning.",
-    ageRange: "Ages 5-7",
-    bgImage: "/images/communities/age 9-11.jpg",
-    href: "/communities/gmkr",
-    isPaid: true,
+    href: "/programs/kids-chat-room",
   },
   {
     id: "speech-zone",
@@ -1175,7 +1164,7 @@ const communities = [
       "Develop confident speaking, presentation skills, and podcast creation abilities.",
     ageRange: "Ages 8-16",
     bgImage: "/images/communities/age 8-16.jpg",
-    href: "/communities/speech-zone",
+    href: "/programs/speech-zone",
   },
   {
     id: "passion-lab",
@@ -1185,7 +1174,7 @@ const communities = [
       "Transform hobbies into meaningful projects with expert guidance and peer support.",
     ageRange: "Ages 6-16",
     bgImage: "/images/communities/ages 9-11.jpg",
-    href: "/communities/passion-lab",
+    href: "/programs/passion-lab",
   },
   {
     id: "entrepreneurs",
@@ -1195,7 +1184,7 @@ const communities = [
       "Learn business fundamentals through engaging role-play scenarios and mentorship.",
     ageRange: "Ages 8-16+",
     bgImage: "/images/communities/age 9-11+.jpg",
-    href: "/communities/entrepreneurs",
+    href: "/programs/entrepreneurs",
   },
   {
     id: "career-guidance",
@@ -1205,18 +1194,7 @@ const communities = [
       "Comprehensive career exploration, skill development, and future planning for teens.",
     ageRange: "16+ Only",
     bgImage: "/images/communities/age 16+.jpg",
-    href: "/communities/career-guidance",
-  },
-  {
-    id: "sdr-bdr-training",
-    title: "SDR/BDR Training + Internship 💻",
-    subtitle: "Tech Sales Mastery",
-    description:
-      "Professional training in sales development with real internship opportunities.",
-    ageRange: "18+ Only",
-    bgImage: "/images/communities/age 12+.jpg",
-    href: "/communities/sdr-bdr-training",
-    isPaid: true,
+    href: "/programs/career-guidance",
   },
 ];
 
@@ -1232,15 +1210,15 @@ const CommunitiesSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold gradient-text mb-4">
-            Our Communities
+            Our Programs
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Discover 8 specialized communities designed to nurture different
-            aspects of your child&apos;s growth and development
+            Discover 6 free programs designed to nurture different aspects of
+            your child&apos;s growth and development
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {communities.map((community, index) => (
             <motion.div
               key={community.id}
@@ -1271,13 +1249,6 @@ const CommunitiesSection = () => {
                     <div className="absolute top-8 right-16 w-2 h-2 bg-white rounded-full"></div>
                   </div>
 
-                  {community.isPaid && (
-                    <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full z-[3]">
-                      <span className="text-xs font-semibold text-gray-700">
-                        Premium
-                      </span>
-                    </div>
-                  )}
                   <div className="absolute bottom-3 left-3 text-white z-[3]">
                     <div className="text-xs font-medium bg-white/20 backdrop-blur-sm px-2 py-1 rounded-full">
                       {community.ageRange}
@@ -1314,8 +1285,8 @@ const CommunitiesSection = () => {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <Link href="/communities" className="btn-primary">
-            View All Communities
+          <Link href="/programs" className="btn-primary">
+            View All Programs
           </Link>
         </motion.div>
       </div>

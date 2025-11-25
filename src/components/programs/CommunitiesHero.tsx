@@ -35,16 +35,15 @@ const CommunitiesHero = () => {
 
           <div className="space-y-6">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-bold gradient-text">
-              Our Communities
+              Our Programs
             </h1>
             <h2 className="text-xl sm:text-2xl md:text-3xl font-heading font-semibold text-gray-800">
               8 Specialized Programs for Every Interest
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              From AI exploration to entrepreneurship, each community is
-              carefully designed to nurture specific talents and interests while
-              building essential 21st-century skills in a safe, supportive
-              environment.
+              From AI exploration to entrepreneurship, each program is carefully
+              designed to nurture specific talents and interests while building
+              essential 21st-century skills in a safe, supportive environment.
             </p>
           </div>
 
@@ -62,7 +61,7 @@ const CommunitiesHero = () => {
                 </div>
               </div>
               <div className="text-2xl font-bold text-primary-600 mb-1">8</div>
-              <div className="text-sm text-gray-600">Unique Communities</div>
+              <div className="text-sm text-gray-600">Unique Programs</div>
             </div>
             <div className="text-center">
               <div className="flex justify-center items-center mb-3">

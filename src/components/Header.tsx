@@ -10,7 +10,11 @@ const Header = () => {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
-    { href: "/communities", label: "Communities" },
+    { href: "/programs", label: "Programs" },
+    { href: "/#cohorts", label: "(SCs)Cohort" },
+    { href: "/programs/ai4kids", label: "For Schools" },
+    { href: "/camps", label: "Camps" },
+    { href: "/tutors", label: "Subject Tutor Support" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -40,8 +44,13 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
-            <Link href="/communities" className="btn-primary">
-              Join Community
+            <Link
+              href="https://forms.gle/NakPm7YUyQBcH87z9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
+              Join Our Community
             </Link>
           </div>
 
@@ -70,11 +79,13 @@ const Header = () => {
                 </Link>
               ))}
               <Link
-                href="/communities"
+                href="https://forms.gle/NakPm7YUyQBcH87z9"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary inline-block text-center"
                 onClick={() => setIsOpen(false)}
               >
-                Join Community
+                Join Our Community
               </Link>
             </div>
           </div>

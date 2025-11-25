@@ -53,11 +53,14 @@ const communityData = {
 };
 
 export default function AI4KidsPage() {
+  // Replace this URL with your actual Google Form URL when available
+  const googleFormUrl = "https://forms.gle/NakPm7YUyQBcH87z9";
+
   return (
     <>
       <CommunityHero data={communityData} />
       <CommunityContent data={communityData} />
-      <CommunitySignup data={communityData} />
+      <CommunitySignup data={communityData} googleFormUrl={googleFormUrl} />
     </>
   );
 }

@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import SignupForm from "@/components/SignupForm";
+import Link from "next/link";
+import { ExternalLink } from "lucide-react";
 
 interface CommunityData {
   title: string;
@@ -15,13 +16,10 @@ interface CommunityData {
 
 interface CommunitySignupProps {
   data: CommunityData;
+  googleFormUrl?: string;
 }
 
-const CommunitySignup = ({ data }: CommunitySignupProps) => {
-  const handleFormSubmit = (formData: any) => {
-    console.log(`${data.title} signup:`, formData);
-  };
-
+const CommunitySignup = ({ data, googleFormUrl }: CommunitySignupProps) => {
   return (
     <section className="section-padding bg-gray-50">
       <div className="container-max mx-auto">
@@ -120,10 +118,41 @@ const CommunitySignup = ({ data }: CommunitySignupProps) => {
               <h3 className="text-xl font-heading font-bold text-gray-800 mb-6 text-center">
                 Join {data.title.replace(/[🤖💬📚✨🌟🚀💼🎯💻]/g, "").trim()}
               </h3>
-              <SignupForm
-                communityName={data.title}
-                onSubmit={handleFormSubmit}
-              />
+              {googleFormUrl ? (
+                <div className="space-y-6">
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      <strong>
+                        To participate in one or more of our programs (Free &
+                        Premium):
+                      </strong>
+                    </p>
+                  </div>
+                  <p className="text-gray-600 text-center">
+                    Click the button below to fill out our registration form and
+                    join the community!
+                  </p>
+                  <Link
+                    href={googleFormUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary w-full inline-flex items-center justify-center group"
+                  >
+                    Open Registration Form
+                    <ExternalLink className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                  <p className="text-sm text-gray-500 text-center">
+                    The form will open in a new tab
+                  </p>
+                </div>
+              ) : (
+                <div className="text-center text-gray-600">
+                  <p>Registration form coming soon!</p>
+                  <p className="text-sm mt-2">
+                    Check back later or contact us for more information.
+                  </p>
+                </div>
+              )}
             </div>
           </motion.div>
         </div>

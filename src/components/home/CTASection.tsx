@@ -26,10 +26,10 @@ const CTASection = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
-              href="/communities"
+              href="/programs"
               className="bg-white text-primary-600 hover:bg-gray-100 font-medium py-3 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg group"
             >
-              Explore Communities
+              Explore Programs
               <ArrowRight className="ml-2 h-5 w-5 inline transition-transform group-hover:translate-x-1" />
             </Link>
             <Link

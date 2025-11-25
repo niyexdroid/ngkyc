@@ -7,7 +7,7 @@ const features = [
     icon: <Shield className="h-8 w-8" />,
     title: "Safe Environment",
     description:
-      "All communities are moderated by trained professionals to ensure a safe and supportive learning environment.",
+      "All programs are moderated by trained professionals to ensure a safe and supportive learning environment.",
     color: "text-green-600",
     bgColor: "bg-green-100",
   },
@@ -39,15 +39,15 @@ const features = [
     icon: <Star className="h-8 w-8" />,
     title: "Project Showcases",
     description:
-      "Share your projects and get feedback from peers and mentors in community showcase events.",
+      "Share your projects and get feedback from peers and mentors in program showcase events.",
     color: "text-pink-600",
     bgColor: "bg-pink-100",
   },
   {
     icon: <Heart className="h-8 w-8" />,
-    title: "Supportive Community",
+    title: "Supportive Program",
     description:
-      "Be part of a caring community that celebrates diversity and encourages personal growth.",
+      "Be part of a caring program that celebrates diversity and encourages personal growth.",
     color: "text-red-600",
     bgColor: "bg-red-100",
   },
@@ -59,10 +59,10 @@ const CommunityFeatures = () => {
       <div className="container-max mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-heading font-bold text-gray-900 mb-4">
-            Why Our Communities Are Special
+            Why Our Programs Are Special
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Every NGKYC community is designed with safety, learning, and fun at
+            Every NGKYC program is designed with safety, learning, and fun at
             its core. Here's what makes our platform unique for young learners.
           </p>
         </div>
@@ -95,7 +95,7 @@ const CommunityFeatures = () => {
         {/* Bottom CTA Section */}
         <div className="mt-16 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl p-8 text-center text-white">
           <h3 className="text-2xl sm:text-3xl font-heading font-bold mb-4">
-            Ready to Join a Community?
+            Ready to Join a Program?
           </h3>
           <p className="text-lg text-primary-100 mb-8 max-w-2xl mx-auto">
             Start your journey today and discover new interests, make friends,
@@ -103,7 +103,7 @@ const CommunityFeatures = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
-              Browse Communities
+              Browse Programs
             </button>
             <button className="bg-primary-600 bg-opacity-20 text-white border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-all">
               Learn More

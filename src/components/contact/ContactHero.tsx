@@ -34,21 +34,42 @@ const ContactHero = () => {
                 <Mail className="h-6 w-6 text-primary-600" />
               </div>
               <h3 className="font-semibold text-gray-800 mb-1">Email</h3>
-              <p className="text-sm text-gray-600">hello@ngkyc.org</p>
+              <a
+                href="mailto:info@ngkyc.com"
+                className="text-sm text-gray-600 hover:text-primary-600 transition-colors"
+              >
+                info@ngkyc.com
+              </a>
             </div>
             <div className="text-center">
               <div className="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                <Phone className="h-6 w-6 text-secondary-600" />
+                <span className="text-2xl">💬</span>
               </div>
-              <h3 className="font-semibold text-gray-800 mb-1">Phone</h3>
-              <p className="text-sm text-gray-600">+1 (555) 123-4567</p>
+              <h3 className="font-semibold text-gray-800 mb-1">WhatsApp</h3>
+              <div className="text-sm text-gray-600">
+                <a
+                  href="https://wa.me/16478041399"
+                  className="block hover:text-primary-600 transition-colors"
+                >
+                  +1 647 804 1399
+                </a>
+                <a
+                  href="https://wa.me/2348023791213"
+                  className="block hover:text-primary-600 transition-colors"
+                >
+                  +234 802 379 1213
+                </a>
+              </div>
             </div>
             <div className="text-center">
               <div className="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-3">
                 <MapPin className="h-6 w-6 text-accent-600" />
               </div>
               <h3 className="font-semibold text-gray-800 mb-1">Location</h3>
-              <p className="text-sm text-gray-600">Global Community</p>
+              <div className="text-sm text-gray-600">
+                <p className="font-medium">Global Community</p>
+                <p className="text-xs mt-1">Canada & Nigeria</p>
+              </div>
             </div>
           </div>
         </motion.div>

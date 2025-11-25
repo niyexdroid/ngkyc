@@ -39,11 +39,11 @@ const CommunityHero = ({ data }: CommunityHeroProps) => {
           className="mb-8"
         >
           <Link
-            href="/communities"
+            href="/programs"
             className="inline-flex items-center text-primary-600 hover:text-primary-700 transition-colors duration-200"
           >
             <ArrowLeft className="h-5 w-5 mr-2" />
-            Back to Communities
+            Back to Programs
           </Link>
         </motion.div>
 

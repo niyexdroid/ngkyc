@@ -17,9 +17,9 @@ interface Community {
 const communities: Community[] = [
   {
     id: "ai4kids",
-    title: "AI4Kids",
+    title: "AI4Kids 🤖",
     description:
-      "Explore artificial intelligence through fun, age-appropriate activities and projects.",
+      "Fun AI exploration through games, projects, and hands-on activities that make complex concepts simple.",
     icon: <Sparkles className="h-8 w-8" />,
     color: "text-purple-600",
     bgColor: "bg-purple-100",
@@ -27,10 +27,10 @@ const communities: Community[] = [
     featured: true,
   },
   {
-    id: "creativearts",
-    title: "Creative Arts",
+    id: "kids-chat-room",
+    title: "Kids Chat Room 💬",
     description:
-      "Express yourself through digital art, music, and creative storytelling.",
+      "Safe, moderated environment for building emotional intelligence and lasting friendships.",
     icon: <Star className="h-8 w-8" />,
     color: "text-pink-600",
     bgColor: "bg-pink-100",
@@ -38,63 +38,70 @@ const communities: Community[] = [
     featured: true,
   },
   {
-    id: "techexplorers",
-    title: "Tech Explorers",
+    id: "gmkr",
+    title: "Get My Kid(s) to Read 📚✨",
     description:
-      "Dive into coding, robotics, and the latest technological innovations.",
+      "Structured reading program with phonics games, storytelling, and interactive learning.",
     icon: <Users className="h-8 w-8" />,
+    color: "text-amber-600",
+    bgColor: "bg-amber-100",
+    members: 850,
+    featured: false,
+  },
+  {
+    id: "speech-zone",
+    title: "Presentation & Articulation Skills 🌟",
+    description:
+      "Develop confident speaking, presentation skills, and podcast creation abilities.",
+    icon: <Sparkles className="h-8 w-8" />,
+    color: "text-rose-600",
+    bgColor: "bg-rose-100",
+    members: 720,
+    featured: false,
+  },
+  {
+    id: "passion-lab",
+    title: "Kid's Passion Incubation 🚀",
+    description:
+      "Transform hobbies into meaningful projects with expert guidance and peer support.",
+    icon: <Star className="h-8 w-8" />,
+    color: "text-violet-600",
+    bgColor: "bg-violet-100",
+    members: 680,
+    featured: false,
+  },
+  {
+    id: "entrepreneurs",
+    title: "Role Plays: Kidspreneurs & Teenpreneurs 💼",
+    description:
+      "Learn business fundamentals through engaging role-play scenarios and mentorship.",
+    icon: <Users className="h-8 w-8" />,
+    color: "text-teal-600",
+    bgColor: "bg-teal-100",
+    members: 590,
+    featured: false,
+  },
+  {
+    id: "career-guidance",
+    title: "Teens Career Guidance & Prep 🎯",
+    description:
+      "Comprehensive career exploration, skill development, and future planning for teens.",
+    icon: <Sparkles className="h-8 w-8" />,
     color: "text-blue-600",
     bgColor: "bg-blue-100",
-    members: 1150,
+    members: 520,
+    featured: false,
   },
   {
-    id: "youngentrepreneurs",
-    title: "Young Entrepreneurs",
+    id: "sdr-bdr-training",
+    title: "SDR/BDR Training + Internship 💻",
     description:
-      "Learn business skills and develop your entrepreneurial mindset.",
+      "Professional training in sales development with real internship opportunities.",
     icon: <Star className="h-8 w-8" />,
-    color: "text-green-600",
-    bgColor: "bg-green-100",
-    members: 750,
-  },
-  {
-    id: "environmentalchampions",
-    title: "Environmental Champions",
-    description:
-      "Make a difference in environmental conservation and sustainability.",
-    icon: <Sparkles className="h-8 w-8" />,
-    color: "text-emerald-600",
-    bgColor: "bg-emerald-100",
-    members: 620,
-  },
-  {
-    id: "healthwellness",
-    title: "Health & Wellness",
-    description:
-      "Promote physical and mental wellness through fun activities and education.",
-    icon: <Users className="h-8 w-8" />,
-    color: "text-red-600",
-    bgColor: "bg-red-100",
-    members: 890,
-  },
-  {
-    id: "communityservice",
-    title: "Community Service",
-    description:
-      "Make a positive impact through volunteer work and community projects.",
-    icon: <Star className="h-8 w-8" />,
-    color: "text-orange-600",
-    bgColor: "bg-orange-100",
-    members: 540,
-  },
-  {
-    id: "globalconnections",
-    title: "Global Connections",
-    description: "Connect with peers worldwide and explore different cultures.",
-    icon: <Sparkles className="h-8 w-8" />,
-    color: "text-indigo-600",
-    bgColor: "bg-indigo-100",
-    members: 780,
+    color: "text-slate-600",
+    bgColor: "bg-slate-100",
+    members: 450,
+    featured: false,
   },
 ];
 
@@ -107,7 +114,7 @@ const CommunitiesGrid = () => {
             Choose Your Adventure
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Each community offers unique learning experiences, projects, and
+            Each program offers unique learning experiences, projects, and
             connections with like-minded peers.
           </p>
         </div>
@@ -154,10 +161,10 @@ const CommunitiesGrid = () => {
                 </p>
 
                 <Link
-                  href={`/communities/${community.id}`}
+                  href={`/programs/${community.id}`}
                   className="inline-flex items-center text-primary-600 hover:text-primary-700 font-semibold group-hover:underline"
                 >
-                  Explore Community
+                  Explore Program
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
@@ -171,11 +178,11 @@ const CommunitiesGrid = () => {
               Not Sure Where to Start?
             </h3>
             <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-              Take our quick quiz to find the perfect community that matches
-              your interests and goals.
+              Take our quick quiz to find the perfect program that matches your
+              interests and goals.
             </p>
             <button className="btn-primary inline-flex items-center">
-              Take Community Quiz
+              Take Program Quiz
               <ArrowRight className="ml-2 h-4 w-4" />
             </button>
           </div>

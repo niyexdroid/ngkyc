@@ -104,10 +104,10 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <Link
-              href="/communities"
+              href="/programs"
               className="btn-primary group w-full sm:w-auto inline-flex items-center justify-center"
             >
-              Explore Communities
+              Explore Programs
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Link>
             <Link
