@@ -6,36 +6,44 @@ import { Users, Heart, Brain, Zap } from "lucide-react";
 const TeamSection = () => {
   const teamMembers = [
     {
-      name: "Sarah Johnson",
-      role: "Founder & Educational Director",
+      name: "Azeezat O Oko-osi",
+      role: "Founder & Director of Community",
       description:
-        "Passionate educator with 15+ years experience in youth development and technology education.",
-      icon: "👩‍🏫",
+        "Visionary leader dedicated to empowering the next generation through innovative programs and community building.",
+      icon: "👩‍💼",
       color: "from-primary-400 to-primary-600",
     },
     {
-      name: "Michael Chen",
-      role: "Technology Lead",
+      name: "Dr Adaeze Loretta",
+      role: "Head Participants Success",
       description:
-        "Former Silicon Valley engineer dedicated to making technology accessible and fun for kids.",
-      icon: "👨‍💻",
+        "Committed to ensuring every participant achieves their full potential and has an exceptional learning experience.",
+      icon: "👩‍⚕️",
       color: "from-secondary-400 to-secondary-600",
     },
     {
-      name: "Emily Rodriguez",
-      role: "Community Manager",
+      name: "Adegbola Adeniyi",
+      role: "Head, Technology & Transformation",
       description:
-        "Child psychologist specializing in safe online environments and social development.",
-      icon: "👩‍💼",
+        "Leading technological innovation and digital transformation to create engaging learning experiences.",
+      icon: "👨‍💻",
       color: "from-accent-400 to-orange-500",
     },
     {
-      name: "David Kim",
-      role: "Innovation Coordinator",
+      name: "Olga Petrovik",
+      role: "Admin and Community Manager",
       description:
-        "Creative strategist focusing on age-appropriate learning experiences and engagement.",
-      icon: "👨‍🎨",
+        "Fostering a vibrant, supportive community while ensuring smooth operations and excellent communication.",
+      icon: "👩‍💼",
       color: "from-purple-400 to-pink-500",
+    },
+    {
+      name: "Abayomi Abass",
+      role: "Co-Founder & Non Executive Director",
+      description:
+        "Strategic advisor and co-founder providing guidance and vision for NGKYC's growth and impact.",
+      icon: "👨‍💼",
+      color: "from-blue-400 to-indigo-500",
     },
   ];
 
@@ -58,7 +66,7 @@ const TeamSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 mb-16">
           {teamMembers.map((member, index) => (
             <motion.div
               key={member.name}

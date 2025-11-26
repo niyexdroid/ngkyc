@@ -23,7 +23,7 @@ const communities: Community[] = [
     icon: <Sparkles className="h-8 w-8" />,
     color: "text-purple-600",
     bgColor: "bg-purple-100",
-    members: 1200,
+    members: 500,
     featured: true,
   },
   {
@@ -34,7 +34,7 @@ const communities: Community[] = [
     icon: <Star className="h-8 w-8" />,
     color: "text-pink-600",
     bgColor: "bg-pink-100",
-    members: 980,
+    members: 200,
     featured: true,
   },
   {
@@ -45,7 +45,7 @@ const communities: Community[] = [
     icon: <Users className="h-8 w-8" />,
     color: "text-amber-600",
     bgColor: "bg-amber-100",
-    members: 850,
+    members: 50,
     featured: false,
   },
   {
@@ -56,7 +56,7 @@ const communities: Community[] = [
     icon: <Sparkles className="h-8 w-8" />,
     color: "text-rose-600",
     bgColor: "bg-rose-100",
-    members: 720,
+    members: 80,
     featured: false,
   },
   {
@@ -67,7 +67,7 @@ const communities: Community[] = [
     icon: <Star className="h-8 w-8" />,
     color: "text-violet-600",
     bgColor: "bg-violet-100",
-    members: 680,
+    members: 40,
     featured: false,
   },
   {
@@ -78,7 +78,7 @@ const communities: Community[] = [
     icon: <Users className="h-8 w-8" />,
     color: "text-teal-600",
     bgColor: "bg-teal-100",
-    members: 590,
+    members: 100,
     featured: false,
   },
   {
@@ -89,7 +89,7 @@ const communities: Community[] = [
     icon: <Sparkles className="h-8 w-8" />,
     color: "text-blue-600",
     bgColor: "bg-blue-100",
-    members: 520,
+    members: 85,
     featured: false,
   },
   {
@@ -100,7 +100,7 @@ const communities: Community[] = [
     icon: <Star className="h-8 w-8" />,
     color: "text-slate-600",
     bgColor: "bg-slate-100",
-    members: 450,
+    members: 180,
     featured: false,
   },
 ];

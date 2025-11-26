@@ -15,6 +15,7 @@ const communityData = {
     "Welcome to our vibrant creative space! Kids Chatroom is where young artists, musicians, and storytellers come together to express themselves, share their creations, and connect with like-minded creative peers from around the world.",
   ageRange: "Ages 8-16",
   pricing: "Free Program",
+  members: "200+ participants",
   color: "from-pink-400 to-purple-500",
   quote:
     '"Creativity is intelligence having fun. Every child is an artist waiting to bloom."',

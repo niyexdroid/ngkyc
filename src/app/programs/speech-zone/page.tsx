@@ -15,6 +15,7 @@ const communityData = {
     "Master the art of communication! Speech Zone helps young speakers develop confidence, clarity, and compelling presentation skills through practice sessions, constructive feedback, and real-world speaking opportunities.",
   ageRange: "Ages 8-16",
   pricing: "Free Program",
+  members: "80+ members",
   color: "from-rose-400 to-pink-500",
   quote: '"The art of communication is the language of leadership."',
   features: [

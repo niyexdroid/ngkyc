@@ -10,6 +10,8 @@ interface CommunityData {
   description: string;
   ageRange: string;
   pricing: string;
+  members?: string;
+  channels?: Array<{ name: string; type: string }>;
   color: string;
   quote: string;
 }
@@ -70,16 +72,60 @@ const CommunityHero = ({ data }: CommunityHeroProps) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto pt-8"
+            className="max-w-4xl mx-auto pt-8"
           >
-            <div className="bg-white rounded-xl p-4 shadow-lg">
-              <h3 className="font-semibold text-gray-800 mb-1">Age Range</h3>
-              <p className="text-primary-600 font-medium">{data.ageRange}</p>
+            <div
+              className={`grid grid-cols-1 ${
+                data.members ? "sm:grid-cols-3" : "sm:grid-cols-2"
+              } gap-6 ${data.channels ? "mb-6" : ""}`}
+            >
+              <div className="bg-white rounded-xl p-4 shadow-lg">
+                <h3 className="font-semibold text-gray-800 mb-1">Age Range</h3>
+                <p className="text-primary-600 font-medium">{data.ageRange}</p>
+              </div>
+              <div className="bg-white rounded-xl p-4 shadow-lg">
+                <h3 className="font-semibold text-gray-800 mb-1">Pricing</h3>
+                <p className="text-secondary-600 font-medium">{data.pricing}</p>
+              </div>
+              {data.members && (
+                <div className="bg-white rounded-xl p-4 shadow-lg">
+                  <h3 className="font-semibold text-gray-800 mb-1">
+                    Community
+                  </h3>
+                  <p className="text-accent-600 font-medium">{data.members}</p>
+                </div>
+              )}
             </div>
-            <div className="bg-white rounded-xl p-4 shadow-lg">
-              <h3 className="font-semibold text-gray-800 mb-1">Pricing</h3>
-              <p className="text-secondary-600 font-medium">{data.pricing}</p>
-            </div>
+
+            {/* Channels Section */}
+            {data.channels && (
+              <div className="bg-white rounded-xl p-6 shadow-lg">
+                <h3 className="font-semibold text-gray-800 mb-4 text-center">
+                  Available Channels
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  {data.channels.map((channel, index) => (
+                    <div
+                      key={index}
+                      className="text-center p-4 bg-gray-50 rounded-lg"
+                    >
+                      <p className="font-semibold text-gray-800 mb-1">
+                        {channel.name}
+                      </p>
+                      <span
+                        className={`inline-block px-3 py-1 rounded-full text-sm font-medium ${
+                          channel.type === "Free"
+                            ? "bg-green-100 text-green-700"
+                            : "bg-blue-100 text-blue-700"
+                        }`}
+                      >
+                        {channel.type}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
           </motion.div>
 
           {/* Quote */}

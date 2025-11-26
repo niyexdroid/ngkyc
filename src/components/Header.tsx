@@ -10,9 +10,9 @@ const Header = () => {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
-    { href: "/programs", label: "Programs" },
-    { href: "/#cohorts", label: "(SCs)Cohort" },
-    { href: "/programs/ai4kids", label: "For Schools" },
+    { href: "/programs", label: "Programs (SCs)" },
+    { href: "/#cohorts", label: "Cohort" },
+    { href: "/programs/ai4kids", label: "Schools Xtra.C" },
     { href: "/camps", label: "Camps" },
     { href: "/tutors", label: "Subject Tutor Support" },
     { href: "/contact", label: "Contact" },
@@ -34,7 +34,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-4">
             {navLinks.map((link) => (
               <Link
                 key={link.href}

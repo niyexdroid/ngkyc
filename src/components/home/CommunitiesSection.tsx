@@ -8,7 +8,10 @@ import { ArrowRight } from "lucide-react";
 // Age-appropriate diverse character SVG illustrations
 const getAgeGroupIllustration = (ageRange: string) => {
   const isEarlyKids = ageRange.includes("5-7");
-  const isYoungKids = ageRange.includes("5-16") || ageRange.includes("6-16");
+  const isYoungKids =
+    ageRange.includes("5-16") ||
+    ageRange.includes("6-16") ||
+    ageRange.includes("6-14");
   const isOlderKids = ageRange.includes("8-16");
   const isTeens = ageRange.includes("16+") && !ageRange.includes("18+");
   const isAdults = ageRange.includes("18+");
@@ -1142,7 +1145,7 @@ const communities = [
     subtitle: "Future-Ready Tech Explorers",
     description:
       "Fun AI exploration through games, projects, and hands-on activities that make complex concepts simple.",
-    ageRange: "Ages 6-16",
+    ageRange: "Ages 5-16",
     bgImage: "/images/communities/age 6-8.jpg",
     href: "/programs/ai4kids",
   },
@@ -1152,7 +1155,7 @@ const communities = [
     subtitle: "Social Skills & Friendships Platform",
     description:
       "Safe, moderated environment for building emotional intelligence and lasting friendships.",
-    ageRange: "Ages 5-16",
+    ageRange: "Ages 6-14",
     bgImage: "/images/communities/age 5-8.jpg",
     href: "/programs/kids-chat-room",
   },

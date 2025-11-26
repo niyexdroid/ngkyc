@@ -44,8 +44,8 @@ const HeroSection = () => {
               Next Gen Kids & Youth Club
             </h2>
             <p className="text-lg sm:text-xl text-primary-600 font-medium max-w-3xl mx-auto leading-relaxed">
-              Creativity, Innovation & Technology Hub for Kids and budding
-              youths
+              Creativity, Innovation, Learning & Technology Hub for Kids and
+              budding youths
             </p>
           </div>
 
@@ -56,7 +56,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed"
           >
-            Empowering the next generation through 8 specialized communities
+            Empowering the next generation through 8 specialized Sub-communities
             designed to nurture creativity, innovation, and technological
             excellence. From AI exploration to entrepreneurship, we&apos;re
             building the future leaders of tomorrow.
@@ -74,7 +74,7 @@ const HeroSection = () => {
                 <Users className="h-8 w-8 text-primary-500" />
               </div>
               <div className="text-2xl font-bold text-primary-600">8</div>
-              <div className="text-sm text-gray-600">Communities</div>
+              <div className="text-sm text-gray-600">Sub-Communities</div>
             </div>
             <div className="text-center">
               <div className="flex justify-center items-center mb-2">

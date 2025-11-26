@@ -67,8 +67,18 @@ const TutorSupportPage = () => {
       id: "test-prep",
       icon: GraduationCap,
       title: "Test Preparation",
-      description: "SAT, ACT, AP Exams, and standardized test readiness",
-      levels: ["SAT/ACT", "AP Exams", "State Tests", "College Prep"],
+      description:
+        "SAT, ACT, AP Exams, WAEC, NECO, UTME, POST-UTME, and standardized test readiness",
+      levels: [
+        "SAT/ACT",
+        "AP Exams",
+        "WAEC",
+        "NECO",
+        "UTME",
+        "POST-UTME",
+        "State Tests",
+        "College Prep",
+      ],
       color: "from-yellow-500 to-orange-500",
     },
   ];
@@ -224,7 +234,7 @@ const TutorSupportPage = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="card group hover:shadow-xl transition-all duration-300"
+                  className="card group hover:shadow-xl transition-all duration-300 p-6"
                 >
                   <div
                     className={`inline-flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br ${subject.color} text-white mb-4 group-hover:scale-110 transition-transform duration-300`}
@@ -297,7 +307,7 @@ const TutorSupportPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="card text-center"
+                className="card text-center p-6"
               >
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 text-white mb-4">
                   <Clock className="h-8 w-8" />

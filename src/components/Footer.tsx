@@ -9,9 +9,9 @@ const Footer = () => {
   const navigationLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Programs", href: "/programs" },
-    { name: "(SCs)Cohort", href: "/#cohorts" },
-    { name: "For Schools", href: "/programs/ai4kids" },
+    { name: "Programs (SCs)", href: "/programs" },
+    { name: "Cohort", href: "/#cohorts" },
+    { name: "Schools Xtra.C", href: "/programs/ai4kids" },
     { name: "Camps", href: "/camps" },
     { name: "Subject Tutor Support", href: "/tutors" },
     { name: "Contact", href: "/contact" },
@@ -38,8 +38,8 @@ const Footer = () => {
               NGKYC
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Next Gen Kids & Youth Club - A creativity, innovation & technology
-              hub empowering the next generation through specialized
+              Next Gen Kids & Youth Club - A creativity, innovation, learning &
+              technology hub empowering the next generation through specialized
               communities.
             </p>
             <div className="flex space-x-4">

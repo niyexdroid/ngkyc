@@ -15,6 +15,7 @@ const communityData = {
     "Turn your passion into projects! Passion Lab is where kids transform their hobbies and interests into meaningful projects, learning valuable skills along the way with expert mentorship and supportive peers.",
   ageRange: "Ages 6-16",
   pricing: "Free Program",
+  members: "40+ members",
   color: "from-violet-400 to-purple-500",
   quote: '"Follow your passion, and success will follow you."',
   features: [

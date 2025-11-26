@@ -46,6 +46,17 @@ const AboutHero = () => {
               innovation, and technology hub designed specifically for young
               minds aged 5-18+.
             </p>
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              Started as a SAAS EDJE Initiative but with less privileged kids
+              inclusion in mind, NGKYC is evolving to become a registered
+              charity/NGO
+            </p>
+            <p className="text-base font-semibold text-primary-700 max-w-4xl mx-auto">
+              Be Part of the Change
+            </p>
+            <p className="text-base text-gray-600 max-w-4xl mx-auto">
+              While we work towards our registered charity/NGO status,
+            </p>
           </div>
 
           {/* Key Stats */}

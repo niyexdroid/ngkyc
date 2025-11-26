@@ -15,7 +15,8 @@ const communityData = {
     "Launch your tech sales career! Our comprehensive SDR/BDR training program combines professional sales development training with real internship opportunities, giving you hands-on experience in the fast-growing tech sales industry.",
   ageRange: "18+ Only",
   pricing: "Premium Program",
-  color: "from-slate-400 to-gray-600",
+  members: "180+ participants",
+  color: "from-slate-400 to-gray-500",
   quote:
     '"Sales are contingent upon the attitude of the salesman, not the attitude of the prospect."',
   features: [

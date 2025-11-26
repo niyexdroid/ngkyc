@@ -15,6 +15,7 @@ const communityData = {
     "Plan your future with confidence! Our Teen Career Guidance program provides comprehensive career exploration, skill assessments, industry insights, and practical preparation for your professional journey ahead.",
   ageRange: "16+ Only",
   pricing: "Free Program",
+  members: "85+ members",
   color: "from-blue-400 to-indigo-500",
   quote:
     '"Choose a job you love, and you will never have to work a day in your life."',

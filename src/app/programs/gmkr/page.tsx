@@ -15,6 +15,7 @@ const communityData = {
     "Welcome to our engaging reading adventure! Get My Kid(s) to Read is a structured program that makes learning to read fun through phonics games, interactive storytelling, and personalized reading activities designed specifically for early learners.",
   ageRange: "Ages 5-7",
   pricing: "Premium Program",
+  members: "50+ members",
   color: "from-amber-400 to-orange-500",
   quote:
     '"The more that you read, the more things you will know. The more that you learn, the more places you\'ll go." - Dr. Seuss',

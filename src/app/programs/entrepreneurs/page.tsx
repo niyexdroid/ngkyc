@@ -15,6 +15,7 @@ const communityData = {
     "Experience entrepreneurship firsthand! Through engaging role-play scenarios, young entrepreneurs learn business fundamentals, leadership skills, and innovative thinking in a fun, supportive environment.",
   ageRange: "Ages 8-16+",
   pricing: "Free Program",
+  members: "100+ members",
   color: "from-teal-400 to-cyan-500",
   quote: '"The only way to do great work is to love what you do." - Steve Jobs',
   features: [

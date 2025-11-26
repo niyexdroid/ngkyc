@@ -10,11 +10,17 @@ export const metadata = {
 
 const communityData = {
   title: "AI4Kids 🤖",
-  subtitle: "Future-Ready Tech Explorers",
+  subtitle: "Extra Curricular for Schools",
   description:
     "Welcome to the exciting world of Artificial Intelligence! Our AI4Kids community makes complex AI concepts accessible and fun through interactive games, creative projects, and hands-on exploration.",
   ageRange: "Ages 6-16",
-  pricing: "Free Community",
+  pricing: "Multiple Channels",
+  members: "500+ members",
+  channels: [
+    { name: "Extra Curricular", type: "Paid" },
+    { name: "Camps", type: "Paid" },
+    { name: "Home Club", type: "Free" },
+  ],
   color: "from-blue-400 to-purple-500",
   quote:
     '"AI is not about replacing humans, but about augmenting human intelligence and creativity."',
@@ -41,14 +47,11 @@ const communityData = {
     },
   ],
   activities: [
-    "AI Art Generation Projects",
-    "Simple Chatbot Building",
-    "Machine Learning Basics",
-    "Computer Vision Games",
-    "Voice Recognition Experiments",
-    "AI Ethics Discussions (Age-appropriate)",
-    "Future Technology Exploration",
-    "Programming with Scratch for AI",
+    "AI learning for Arts",
+    "AI learning for Science",
+    "AI learning for Maths",
+    "AI learning for Language",
+    "AI learning for Technology & Coding",
   ],
 };
 
