@@ -61,7 +61,11 @@ export default function AI4KidsPage() {
 
   return (
     <>
-      <CommunityHero data={communityData} />
+      <CommunityHero
+        data={communityData}
+        backgroundImage="/images/communities/AI4kids.jpeg"
+        backgroundSize="cover"
+      />
       <CommunityContent data={communityData} />
       <CommunitySignup data={communityData} googleFormUrl={googleFormUrl} />
     </>

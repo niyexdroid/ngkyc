@@ -57,9 +57,9 @@ const FeaturesSection = () => {
             Why Choose NGKYC?
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            We&apos;re more than just a learning platform – we&apos;re a
-            community dedicated to nurturing the next generation of innovators,
-            creators, and leaders.
+            We are more than just a learning platform – we&apos;re a community
+            dedicated to nurturing the next generation of innovators, creators,
+            and leaders.
           </p>
         </motion.div>
 

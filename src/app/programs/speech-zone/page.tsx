@@ -57,7 +57,11 @@ export default function SpeechZonePage() {
 
   return (
     <>
-      <CommunityHero data={communityData} />
+      <CommunityHero
+        data={communityData}
+        backgroundImage="/images/communities/presentation_art-skill.jpeg"
+        backgroundSize="cover"
+      />
       <CommunityContent data={communityData} />
       <CommunitySignup data={communityData} googleFormUrl={googleFormUrl} />
     </>

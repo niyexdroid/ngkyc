@@ -58,7 +58,11 @@ export default function CareerGuidancePage() {
 
   return (
     <>
-      <CommunityHero data={communityData} />
+      <CommunityHero
+        data={communityData}
+        backgroundImage="/images/communities/Teen-career.jpg"
+        backgroundSize="100%"
+      />
       <CommunityContent data={communityData} />
       <CommunitySignup data={communityData} googleFormUrl={googleFormUrl} />
     </>

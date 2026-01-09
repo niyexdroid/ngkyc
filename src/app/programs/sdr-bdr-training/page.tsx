@@ -58,7 +58,11 @@ export default function SDRBDRTrainingPage() {
 
   return (
     <>
-      <CommunityHero data={communityData} />
+      <CommunityHero
+        data={communityData}
+        backgroundImage="/images/communities/SDR_BDR_Cohort.jpg"
+        backgroundSize="100%"
+      />
       <CommunityContent data={communityData} />
       <CommunitySignup data={communityData} googleFormUrl={googleFormUrl} />
     </>

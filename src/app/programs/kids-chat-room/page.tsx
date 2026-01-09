@@ -59,7 +59,11 @@ export default function KidsChatroomPage() {
 
   return (
     <>
-      <CommunityHero data={communityData} />
+      <CommunityHero
+        data={communityData}
+        backgroundImage="/images/communities/chatroom1.jpeg"
+        backgroundSize="cover"
+      />
       <CommunityContent data={communityData} />
       <CommunitySignup data={communityData} googleFormUrl={googleFormUrl} />
     </>

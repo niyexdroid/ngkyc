@@ -157,11 +157,17 @@ const TutorSupportPage = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-600 via-secondary-600 to-accent-600 text-white py-20 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-32 h-32 bg-white rounded-full animate-pulse"></div>
-          <div className="absolute bottom-20 right-20 w-40 h-40 bg-white rounded-full animate-pulse delay-100"></div>
-          <div className="absolute top-40 right-40 w-24 h-24 bg-white rounded-full animate-bounce"></div>
+      <section className="relative text-white py-20 overflow-hidden min-h-[70vh] flex items-center">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('/images/communities/tutor-support.jpg')",
+            backgroundSize: "130%",
+          }}
+        >
+          {/* Dark Overlay */}
+          <div className="absolute inset-0 bg-black/50"></div>
         </div>
 
         <div className="container-max mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -176,10 +182,10 @@ const TutorSupportPage = () => {
                 <GraduationCap className="h-16 w-16 text-white" />
               </div>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6 drop-shadow-lg">
               Subject Tutor Support
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8">
+            <p className="text-xl md:text-2xl text-white mb-8 drop-shadow-lg">
               Personalized academic support to help every student reach their
               full potential. Expert tutors, flexible schedules, and proven
               results.

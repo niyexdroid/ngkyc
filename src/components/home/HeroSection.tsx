@@ -7,12 +7,16 @@ import { ArrowRight, Sparkles, Users, Zap } from "lucide-react";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary-50 to-secondary-50">
-        <div className="absolute top-20 left-10 w-20 h-20 bg-accent-400 rounded-full animate-float opacity-60"></div>
-        <div className="absolute top-40 right-20 w-16 h-16 bg-primary-400 rounded-full animate-bounce-slow opacity-60"></div>
-        <div className="absolute bottom-20 left-20 w-24 h-24 bg-secondary-400 rounded-full animate-pulse-slow opacity-60"></div>
-        <div className="absolute bottom-40 right-10 w-12 h-12 bg-accent-500 rounded-full animate-float opacity-60"></div>
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/images/communities/Home-pix.png')",
+          backgroundSize: "100%",
+        }}
+      >
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
       <div className="relative z-10 container-max mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -38,12 +42,12 @@ const HeroSection = () => {
             </motion.div>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold">
-              <span className="gradient-text">NGKYC</span>
+              <span className="text-white drop-shadow-lg">NGKYC</span>
             </h1>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-heading font-semibold text-gray-800">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-heading font-semibold text-white drop-shadow-lg">
               Next Gen Kids & Youth Club
             </h2>
-            <p className="text-lg sm:text-xl text-primary-600 font-medium max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-white font-medium max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
               Creativity, Innovation, Learning & Technology Hub for Kids and
               budding youths
             </p>
@@ -54,7 +58,7 @@ const HeroSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed"
+            className="text-lg text-white max-w-4xl mx-auto leading-relaxed drop-shadow-lg"
           >
             Empowering the next generation through 8 specialized Sub-communities
             designed to nurture creativity, innovation, and technological
@@ -71,28 +75,24 @@ const HeroSection = () => {
           >
             <div className="text-center">
               <div className="flex justify-center items-center mb-2">
-                <Users className="h-8 w-8 text-primary-500" />
+                <Users className="h-8 w-8 text-white" />
               </div>
-              <div className="text-2xl font-bold text-primary-600">8</div>
-              <div className="text-sm text-gray-600">Sub-Communities</div>
+              <div className="text-2xl font-bold text-white">8</div>
+              <div className="text-sm text-gray-200">Sub-Communities</div>
             </div>
             <div className="text-center">
               <div className="flex justify-center items-center mb-2">
-                <Zap className="h-8 w-8 text-secondary-500" />
+                <Zap className="h-8 w-8 text-white" />
               </div>
-              <div className="text-2xl font-bold text-secondary-600">
-                Ages 5-18+
-              </div>
-              <div className="text-sm text-gray-600">Age Range</div>
+              <div className="text-2xl font-bold text-white">Ages 5-18+</div>
+              <div className="text-sm text-gray-200">Age Range</div>
             </div>
             <div className="text-center">
               <div className="flex justify-center items-center mb-2">
-                <Sparkles className="h-8 w-8 text-accent-600" />
+                <Sparkles className="h-8 w-8 text-white" />
               </div>
-              <div className="text-2xl font-bold text-accent-700">
-                Future Ready
-              </div>
-              <div className="text-sm text-gray-600">Innovation</div>
+              <div className="text-2xl font-bold text-white">Future Ready</div>
+              <div className="text-sm text-gray-200">Innovation</div>
             </div>
           </motion.div>
 

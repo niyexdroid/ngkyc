@@ -6,10 +6,16 @@ import { Mail, MapPin, Phone, MessageSquare } from "lucide-react";
 const ContactHero = () => {
   return (
     <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary-50 to-secondary-50">
-        <div className="absolute top-20 left-10 w-16 h-16 bg-accent-400/60 rounded-full animate-float"></div>
-        <div className="absolute top-40 right-20 w-12 h-12 bg-primary-400/60 rounded-full animate-bounce-slow"></div>
-        <div className="absolute bottom-20 left-20 w-20 h-20 bg-secondary-400/60 rounded-full animate-pulse-slow"></div>
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/images/communities/Contact_us.jpg')",
+          backgroundSize: "140%",
+        }}
+      >
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
       <div className="relative z-10 container-max mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -19,10 +25,10 @@ const ContactHero = () => {
           transition={{ duration: 0.8 }}
           className="space-y-6"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-bold gradient-text">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-bold text-white drop-shadow-lg">
             Get In Touch
           </h1>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-white max-w-3xl mx-auto leading-relaxed drop-shadow-lg">
             Have questions about our programs? Interested in partnerships or
             volunteering? We&apos;d love to hear from you and help your child
             join our amazing community.
@@ -30,43 +36,43 @@ const ContactHero = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto pt-8">
             <div className="text-center">
-              <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                <Mail className="h-6 w-6 text-primary-600" />
+              <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3 backdrop-blur-sm">
+                <Mail className="h-6 w-6 text-white" />
               </div>
-              <h3 className="font-semibold text-gray-800 mb-1">Email</h3>
+              <h3 className="font-semibold text-white mb-1">Email</h3>
               <a
-                href="mailto:info@ngkyc.com"
-                className="text-sm text-gray-600 hover:text-primary-600 transition-colors"
+                href="mailto:ngkyc8@gmail.com"
+                className="text-sm text-gray-200 hover:text-white transition-colors"
               >
-                info@ngkyc.com
+                ngkyc8@gmail.com
               </a>
             </div>
             <div className="text-center">
-              <div className="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-3">
+              <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3 backdrop-blur-sm">
                 <span className="text-2xl">💬</span>
               </div>
-              <h3 className="font-semibold text-gray-800 mb-1">WhatsApp</h3>
-              <div className="text-sm text-gray-600">
+              <h3 className="font-semibold text-white mb-1">WhatsApp</h3>
+              <div className="text-sm text-gray-200">
                 <a
                   href="https://wa.me/16478041399"
-                  className="block hover:text-primary-600 transition-colors"
+                  className="block hover:text-white transition-colors"
                 >
                   +1 647 804 1399
                 </a>
                 <a
                   href="https://wa.me/2348023791213"
-                  className="block hover:text-primary-600 transition-colors"
+                  className="block hover:text-white transition-colors"
                 >
                   +234 802 379 1213
                 </a>
               </div>
             </div>
             <div className="text-center">
-              <div className="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                <MapPin className="h-6 w-6 text-accent-600" />
+              <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3 backdrop-blur-sm">
+                <MapPin className="h-6 w-6 text-white" />
               </div>
-              <h3 className="font-semibold text-gray-800 mb-1">Location</h3>
-              <div className="text-sm text-gray-600">
+              <h3 className="font-semibold text-white mb-1">Location</h3>
+              <div className="text-sm text-gray-200">
                 <p className="font-medium">Global Community</p>
                 <p className="text-xs mt-1">Canada & Nigeria</p>
               </div>

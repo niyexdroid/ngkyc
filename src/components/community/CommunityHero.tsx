@@ -18,19 +18,37 @@ interface CommunityData {
 
 interface CommunityHeroProps {
   data: CommunityData;
+  backgroundImage?: string;
+  backgroundSize?: string;
 }
 
-const CommunityHero = ({ data }: CommunityHeroProps) => {
+const CommunityHero = ({
+  data,
+  backgroundImage,
+  backgroundSize = "150%",
+}: CommunityHeroProps) => {
   return (
     <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20">
       {/* Background Elements */}
-      <div
-        className={`absolute inset-0 bg-gradient-to-br ${data.color} opacity-10`}
-      >
-        <div className="absolute top-20 left-10 w-16 h-16 bg-current rounded-full animate-float opacity-30"></div>
-        <div className="absolute top-40 right-20 w-12 h-12 bg-current rounded-full animate-bounce-slow opacity-30"></div>
-        <div className="absolute bottom-20 left-20 w-20 h-20 bg-current rounded-full animate-pulse-slow opacity-30"></div>
-      </div>
+      {backgroundImage ? (
+        <div
+          className="absolute inset-0 bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('${backgroundImage}')`,
+            backgroundSize: backgroundSize,
+          }}
+        >
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
+      ) : (
+        <div
+          className={`absolute inset-0 bg-gradient-to-br ${data.color} opacity-10`}
+        >
+          <div className="absolute top-20 left-10 w-16 h-16 bg-current rounded-full animate-float opacity-30"></div>
+          <div className="absolute top-40 right-20 w-12 h-12 bg-current rounded-full animate-bounce-slow opacity-30"></div>
+          <div className="absolute bottom-20 left-20 w-20 h-20 bg-current rounded-full animate-pulse-slow opacity-30"></div>
+        </div>
+      )}
 
       <div className="relative z-10 container-max mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Back Link */}
@@ -56,13 +74,27 @@ const CommunityHero = ({ data }: CommunityHeroProps) => {
           className="space-y-6"
         >
           <div className="space-y-4">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-bold text-gray-800">
+            <h1
+              className={`text-4xl sm:text-5xl md:text-6xl font-heading font-bold ${
+                backgroundImage ? "text-white drop-shadow-lg" : "text-gray-800"
+              }`}
+            >
               {data.title}
             </h1>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-heading font-semibold text-primary-600">
+            <h2
+              className={`text-xl sm:text-2xl md:text-3xl font-heading font-semibold ${
+                backgroundImage
+                  ? "text-white drop-shadow-lg"
+                  : "text-primary-600"
+              }`}
+            >
               {data.subtitle}
             </h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p
+              className={`text-lg max-w-4xl mx-auto leading-relaxed ${
+                backgroundImage ? "text-white drop-shadow-lg" : "text-gray-600"
+              }`}
+            >
               {data.description}
             </p>
           </div>
@@ -79,28 +111,84 @@ const CommunityHero = ({ data }: CommunityHeroProps) => {
                 data.members ? "sm:grid-cols-3" : "sm:grid-cols-2"
               } gap-6 ${data.channels ? "mb-6" : ""}`}
             >
-              <div className="bg-white rounded-xl p-4 shadow-lg">
-                <h3 className="font-semibold text-gray-800 mb-1">Age Range</h3>
-                <p className="text-primary-600 font-medium">{data.ageRange}</p>
+              <div
+                className={`rounded-xl p-4 shadow-lg ${
+                  backgroundImage ? "bg-white/20 backdrop-blur-sm" : "bg-white"
+                }`}
+              >
+                <h3
+                  className={`font-semibold mb-1 ${
+                    backgroundImage ? "text-white" : "text-gray-800"
+                  }`}
+                >
+                  Age Range
+                </h3>
+                <p
+                  className={`font-medium ${
+                    backgroundImage ? "text-gray-200" : "text-primary-600"
+                  }`}
+                >
+                  {data.ageRange}
+                </p>
               </div>
-              <div className="bg-white rounded-xl p-4 shadow-lg">
-                <h3 className="font-semibold text-gray-800 mb-1">Pricing</h3>
-                <p className="text-secondary-600 font-medium">{data.pricing}</p>
+              <div
+                className={`rounded-xl p-4 shadow-lg ${
+                  backgroundImage ? "bg-white/20 backdrop-blur-sm" : "bg-white"
+                }`}
+              >
+                <h3
+                  className={`font-semibold mb-1 ${
+                    backgroundImage ? "text-white" : "text-gray-800"
+                  }`}
+                >
+                  Pricing
+                </h3>
+                <p
+                  className={`font-medium ${
+                    backgroundImage ? "text-gray-200" : "text-secondary-600"
+                  }`}
+                >
+                  {data.pricing}
+                </p>
               </div>
               {data.members && (
-                <div className="bg-white rounded-xl p-4 shadow-lg">
-                  <h3 className="font-semibold text-gray-800 mb-1">
+                <div
+                  className={`rounded-xl p-4 shadow-lg ${
+                    backgroundImage
+                      ? "bg-white/20 backdrop-blur-sm"
+                      : "bg-white"
+                  }`}
+                >
+                  <h3
+                    className={`font-semibold mb-1 ${
+                      backgroundImage ? "text-white" : "text-gray-800"
+                    }`}
+                  >
                     Community
                   </h3>
-                  <p className="text-accent-600 font-medium">{data.members}</p>
+                  <p
+                    className={`font-medium ${
+                      backgroundImage ? "text-gray-200" : "text-accent-600"
+                    }`}
+                  >
+                    {data.members}
+                  </p>
                 </div>
               )}
             </div>
 
             {/* Channels Section */}
             {data.channels && (
-              <div className="bg-white rounded-xl p-6 shadow-lg">
-                <h3 className="font-semibold text-gray-800 mb-4 text-center">
+              <div
+                className={`rounded-xl p-6 shadow-lg ${
+                  backgroundImage ? "bg-white/20 backdrop-blur-sm" : "bg-white"
+                }`}
+              >
+                <h3
+                  className={`font-semibold mb-4 text-center ${
+                    backgroundImage ? "text-white" : "text-gray-800"
+                  }`}
+                >
                   Available Channels
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -135,7 +223,11 @@ const CommunityHero = ({ data }: CommunityHeroProps) => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="pt-8"
           >
-            <blockquote className="text-lg italic text-gray-600 max-w-3xl mx-auto">
+            <blockquote
+              className={`text-lg italic max-w-3xl mx-auto ${
+                backgroundImage ? "text-white drop-shadow-lg" : "text-gray-600"
+              }`}
+            >
               {data.quote}
             </blockquote>
           </motion.div>
