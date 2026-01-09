@@ -114,6 +114,7 @@ const Footer = () => {
                 <a
                   href="mailto:ngkyc8@gmail.com"
                   className="text-gray-400 hover:text-white transition-colors"
+                  suppressHydrationWarning
                 >
                   ngkyc8@gmail.com
                 </a>
@@ -124,12 +125,14 @@ const Footer = () => {
                   <a
                     href="https://wa.me/16478041399"
                     className="block hover:text-white transition-colors"
+                    suppressHydrationWarning
                   >
                     +1 647 804 1399
                   </a>
                   <a
                     href="https://wa.me/2348023791213"
                     className="block hover:text-white transition-colors"
+                    suppressHydrationWarning
                   >
                     +234 802 379 1213
                   </a>

@@ -56,10 +56,10 @@ const AboutHero = () => {
               inclusion in mind, NGKYC is evolving to become a registered
               charity/NGO
             </p>
-            <p className="text-base font-semibold text-primary-700 max-w-4xl mx-auto">
+            <p className="text-base font-semibold text-white max-w-4xl mx-auto drop-shadow-lg">
               Be Part of the Change
             </p>
-            <p className="text-base text-gray-600 max-w-4xl mx-auto">
+            <p className="text-base text-white max-w-4xl mx-auto drop-shadow-lg">
               While we work towards our registered charity/NGO status,
             </p>
           </div>
@@ -78,7 +78,7 @@ const AboutHero = () => {
                 </div>
               </div>
               <div className="text-2xl font-bold text-primary-600 mb-1">8</div>
-              <div className="text-sm text-gray-600">
+              <div className="text-sm text-white drop-shadow-lg">
                 Specialized Communities
               </div>
             </div>
@@ -91,7 +91,9 @@ const AboutHero = () => {
               <div className="text-2xl font-bold text-secondary-600 mb-1">
                 Safe
               </div>
-              <div className="text-sm text-gray-600">Learning Environment</div>
+              <div className="text-sm text-white drop-shadow-lg">
+                Learning Environment
+              </div>
             </div>
             <div className="text-center">
               <div className="flex justify-center items-center mb-3">
@@ -102,7 +104,9 @@ const AboutHero = () => {
               <div className="text-2xl font-bold text-accent-700 mb-1">
                 Future
               </div>
-              <div className="text-sm text-gray-600">Ready Skills</div>
+              <div className="text-sm text-white drop-shadow-lg">
+                Ready Skills
+              </div>
             </div>
           </motion.div>
         </motion.div>

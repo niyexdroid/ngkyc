@@ -181,10 +181,15 @@ const CommunitiesGrid = () => {
               Take our quick quiz to find the perfect program that matches your
               interests and goals.
             </p>
-            <button className="btn-primary inline-flex items-center">
+            <Link
+              href="https://forms.gle/NakPm7YUyQBcH87z9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary inline-flex items-center"
+            >
               Take Program Quiz
               <ArrowRight className="ml-2 h-4 w-4" />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -11,15 +11,15 @@ const TeamSection = () => {
       role: "Founder & Director of Community",
       description:
         "Visionary leader dedicated to empowering the next generation through innovative programs and community building.",
-      image: "/images/team/founder_dir.jpeg",
+      image: "/images/team/Azeezat_Oko-osi.jpg",
       color: "from-primary-400 to-primary-600",
     },
     {
-      name: "Dr Adaeze Loretta",
+      name: "Adaeze Ibik, PhD",
       role: "Head Participants Success",
       description:
         "Committed to ensuring every participant achieves their full potential and has an exceptional learning experience.",
-      image: "/images/team/Head_part.jpeg",
+      image: "/images/team/Adaeze_Ibik.jpg",
       color: "from-secondary-400 to-secondary-600",
     },
     {
@@ -31,11 +31,11 @@ const TeamSection = () => {
       color: "from-accent-400 to-orange-500",
     },
     {
-      name: "Olga Petrovik",
+      name: "Natalia Sudakova",
       role: "Admin and Community Manager",
       description:
         "Fostering a vibrant, supportive community while ensuring smooth operations and excellent communication.",
-      image: "/images/team/admin_manager.png",
+      image: "/images/team/Natalia-Sudakova.jpg",
       color: "from-purple-400 to-pink-500",
     },
     {
@@ -43,7 +43,7 @@ const TeamSection = () => {
       role: "Co-Founder & Non Executive Director",
       description:
         "Strategic advisor and co-founder providing guidance and vision for NGKYC's growth and impact.",
-      image: "/images/team/cofounder.jpeg",
+      image: "/images/team/Abayomi_Abass.jpg",
       color: "from-blue-400 to-indigo-500",
     },
   ];

@@ -44,14 +44,14 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
-            <Link
+            <a
               href="https://forms.gle/NakPm7YUyQBcH87z9"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
             >
               Join Our Community
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -78,7 +78,7 @@ const Header = () => {
                   {link.label}
                 </Link>
               ))}
-              <Link
+              <a
                 href="https://forms.gle/NakPm7YUyQBcH87z9"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -86,7 +86,7 @@ const Header = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Join Our Community
-              </Link>
+              </a>
             </div>
           </div>
         )}

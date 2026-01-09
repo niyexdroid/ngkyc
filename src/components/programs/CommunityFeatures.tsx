@@ -1,6 +1,7 @@
 "use client";
 
 import { Shield, Users, Star, BookOpen, Award, Heart } from "lucide-react";
+import Link from "next/link";
 
 const features = [
   {
@@ -102,12 +103,18 @@ const CommunityFeatures = () => {
             and develop skills that will last a lifetime.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
+            <Link
+              href="/programs"
+              className="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
+            >
               Browse Programs
-            </button>
-            <button className="bg-primary-600 bg-opacity-20 text-white border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-all">
+            </Link>
+            <Link
+              href="/about"
+              className="bg-primary-600 bg-opacity-20 text-white border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-all"
+            >
               Learn More
-            </button>
+            </Link>
           </div>
         </div>
       </div>

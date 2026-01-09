@@ -132,7 +132,7 @@ const CommunitySignup = ({ data, googleFormUrl }: CommunitySignupProps) => {
                     Click the button below to fill out our registration form and
                     join the community!
                   </p>
-                  <Link
+                  <a
                     href={googleFormUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -140,7 +140,7 @@ const CommunitySignup = ({ data, googleFormUrl }: CommunitySignupProps) => {
                   >
                     Open Registration Form
                     <ExternalLink className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                  </Link>
+                  </a>
                   <p className="text-sm text-gray-500 text-center">
                     The form will open in a new tab
                   </p>
