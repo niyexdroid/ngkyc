@@ -6,11 +6,16 @@ import { Sparkles, Heart, Users } from "lucide-react";
 const AboutHero = () => {
   return (
     <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden pt-20">
-      {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-secondary-50">
-        <div className="absolute top-20 left-10 w-16 h-16 bg-accent-400/60 rounded-full animate-float"></div>
-        <div className="absolute top-40 right-20 w-12 h-12 bg-primary-400/60 rounded-full animate-bounce-slow"></div>
-        <div className="absolute bottom-20 left-20 w-20 h-20 bg-secondary-400/60 rounded-full animate-pulse-slow"></div>
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/images/communities/about_us.jpeg')",
+          backgroundSize: "cover",
+        }}
+      >
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
       <div className="relative z-10 container-max mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -34,19 +39,19 @@ const AboutHero = () => {
           </motion.div>
 
           <div className="space-y-6">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-bold gradient-text">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-bold text-white drop-shadow-lg">
               About NGKYC
             </h1>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-heading font-semibold text-gray-800">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-heading font-semibold text-white drop-shadow-lg">
               Empowering Tomorrow&apos;s Leaders Today
             </h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg text-white max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
               NGKYC (Next Gen Kids & Youth Club) is more than just an
               educational platform – we&apos;re a comprehensive creativity,
               innovation, and technology hub designed specifically for young
               minds aged 5-18+.
             </p>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg text-white max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
               Started as a SAAS EDJE Initiative but with less privileged kids
               inclusion in mind, NGKYC is evolving to become a registered
               charity/NGO

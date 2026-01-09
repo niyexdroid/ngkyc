@@ -11,7 +11,7 @@ const ContactHero = () => {
         className="absolute inset-0 bg-center bg-no-repeat"
         style={{
           backgroundImage: "url('/images/communities/Contact_us.jpg')",
-          backgroundSize: "140%",
+          backgroundSize: "cover",
         }}
       >
         {/* Dark Overlay */}

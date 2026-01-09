@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Users, Heart, Brain, Zap } from "lucide-react";
+import Image from "next/image";
 
 const TeamSection = () => {
   const teamMembers = [
@@ -10,7 +11,7 @@ const TeamSection = () => {
       role: "Founder & Director of Community",
       description:
         "Visionary leader dedicated to empowering the next generation through innovative programs and community building.",
-      icon: "👩‍💼",
+      image: "/images/team/founder_dir.jpeg",
       color: "from-primary-400 to-primary-600",
     },
     {
@@ -18,7 +19,7 @@ const TeamSection = () => {
       role: "Head Participants Success",
       description:
         "Committed to ensuring every participant achieves their full potential and has an exceptional learning experience.",
-      icon: "👩‍⚕️",
+      image: "/images/team/Head_part.jpeg",
       color: "from-secondary-400 to-secondary-600",
     },
     {
@@ -26,7 +27,7 @@ const TeamSection = () => {
       role: "Head, Technology & Transformation",
       description:
         "Leading technological innovation and digital transformation to create engaging learning experiences.",
-      icon: "👨‍💻",
+      image: "/images/team/IT_Support.jpeg",
       color: "from-accent-400 to-orange-500",
     },
     {
@@ -34,7 +35,7 @@ const TeamSection = () => {
       role: "Admin and Community Manager",
       description:
         "Fostering a vibrant, supportive community while ensuring smooth operations and excellent communication.",
-      icon: "👩‍💼",
+      image: "/images/team/admin_manager.png",
       color: "from-purple-400 to-pink-500",
     },
     {
@@ -42,7 +43,7 @@ const TeamSection = () => {
       role: "Co-Founder & Non Executive Director",
       description:
         "Strategic advisor and co-founder providing guidance and vision for NGKYC's growth and impact.",
-      icon: "👨‍💼",
+      image: "/images/team/cofounder.jpeg",
       color: "from-blue-400 to-indigo-500",
     },
   ];
@@ -77,9 +78,18 @@ const TeamSection = () => {
               className="card text-center group"
             >
               <div
-                className={`h-32 bg-gradient-to-br ${member.color} flex items-center justify-center`}
+                className={`h-32 bg-gradient-to-br ${member.color} flex items-center justify-center overflow-hidden relative`}
               >
-                <span className="text-4xl">{member.icon}</span>
+                {member.image ? (
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
+                  />
+                ) : (
+                  <span className="text-4xl">{member.icon}</span>
+                )}
               </div>
               <div className="p-6">
                 <h3 className="text-lg font-heading font-bold text-gray-800 mb-2">
