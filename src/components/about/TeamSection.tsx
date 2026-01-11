@@ -80,16 +80,12 @@ const TeamSection = () => {
               <div
                 className={`h-32 bg-gradient-to-br ${member.color} flex items-center justify-center overflow-hidden relative`}
               >
-                {member.image ? (
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    className="object-cover"
-                  />
-                ) : (
-                  <span className="text-4xl">{member.icon}</span>
-                )}
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-lg font-heading font-bold text-gray-800 mb-2">
