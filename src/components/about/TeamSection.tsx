@@ -10,20 +10,20 @@ const TeamSection = () => {
       name: "Azeezat O Oko-osi",
       role: "Founder & Director of Community",
       description:
-        "Visionary leader dedicated to empowering the next generation through innovative programs and community building.",
+        "Mum of 3 and Visionary leader dedicated to empowering the next generation through innovative programs and community building.",
       image: "/images/team/Azeezat_Oko-osi.jpg",
       color: "from-primary-400 to-primary-600",
     },
     {
-      name: "Adaeze Ibik, PhD",
+      name: "Ada Ibik, Ph.D",
       role: "Head Participants Success",
       description:
-        "Committed to ensuring every participant achieves their full potential and has an exceptional learning experience.",
+        "UofT trained doctor of Astronomy & Astrophysics. Committed to ensuring every participant achieves their full potential and has an exceptional learning experience.",
       image: "/images/team/Adaeze_Ibik.jpg",
       color: "from-secondary-400 to-secondary-600",
     },
     {
-      name: "Adegbola Adeniyi",
+      name: "Adegbola Niyi",
       role: "Head, Technology & Transformation",
       description:
         "Leading technological innovation and digital transformation to create engaging learning experiences.",
@@ -40,7 +40,7 @@ const TeamSection = () => {
     },
     {
       name: "Abayomi Abass",
-      role: "Co-Founder & Non Executive Director",
+      role: "Co-Founder",
       description:
         "Strategic advisor and co-founder providing guidance and vision for NGKYC's growth and impact.",
       image: "/images/team/Abayomi_Abass.jpg",

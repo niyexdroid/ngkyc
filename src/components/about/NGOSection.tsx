@@ -22,12 +22,13 @@ const NGOSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold gradient-text mb-6">
-            Evolving Into an NGO
+            Evolving Into an NPO
           </h2>
           <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            NGKYC is on a journey to become a registered non-governmental
-            organization, expanding our mission to create broader community
-            impact through donations, partnerships, and volunteer programs.
+            NGKYC is on a journey to become a registered charity or non-profit
+            organization(NPO) , expanding our mission to create broader
+            community impact through donations, partnerships, and volunteer
+            programs.
           </p>
         </motion.div>
 

@@ -47,20 +47,20 @@ const AboutHero = () => {
             </h2>
             <p className="text-lg text-white max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
               NGKYC (Next Gen Kids & Youth Club) is more than just an
-              educational platform – we&apos;re a comprehensive creativity,
-              innovation, and technology hub designed specifically for young
-              minds aged 5-18+.
+              educational platform – we are a comprehensive learning,
+              creativity, innovation, and technology hub designed specifically
+              for young minds aged 5-18+.
             </p>
             <p className="text-lg text-white max-w-4xl mx-auto leading-relaxed drop-shadow-lg">
               Started as a SAAS EDJE Initiative but with less privileged kids
               inclusion in mind, NGKYC is evolving to become a registered
-              charity/NGO
+              charity/ NPO
             </p>
             <p className="text-base font-semibold text-white max-w-4xl mx-auto drop-shadow-lg">
               Be Part of the Change
             </p>
             <p className="text-base text-white max-w-4xl mx-auto drop-shadow-lg">
-              While we work towards our registered charity/NGO status,
+              While we work towards our registered charity/ NPO status,
             </p>
           </div>
 
