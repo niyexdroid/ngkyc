@@ -192,7 +192,7 @@ const TutorSupportPage = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
-                href="https://forms.gle/PLACEHOLDER_TUTOR_FORM"
+                href="https://forms.gle/TMLUAaWsnoh4S2kV9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-primary-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 inline-flex items-center space-x-2 shadow-lg hover:shadow-xl"
@@ -201,7 +201,9 @@ const TutorSupportPage = () => {
                 <ArrowRight className="h-5 w-5" />
               </Link>
               <Link
-                href="/contact"
+                href="https://wa.me/16478041399?text=Hello,%20what%20tutor%20support%20do%20we%20need%20to%20help%20your%20kid%25with%20today?"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold hover:bg-white/30 transition-all duration-300 inline-flex items-center space-x-2 border-2 border-white/50"
               >
                 <span>Learn More</span>
@@ -274,7 +276,7 @@ const TutorSupportPage = () => {
             className="text-center mt-12"
           >
             <Link
-              href="https://forms.gle/PLACEHOLDER_TUTOR_FORM"
+              href="https://wa.me/16478041399?text=Hello,%20what%20tutor%20support%20do%20we%20need%20to%20help%20your%20kid%25with%20today?"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary inline-flex items-center space-x-2"
@@ -446,7 +448,7 @@ const TutorSupportPage = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
-                href="https://forms.gle/PLACEHOLDER_TUTOR_FORM"
+                href="https://forms.gle/TMLUAaWsnoh4S2kV9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white text-primary-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 inline-flex items-center space-x-2 shadow-lg hover:shadow-xl"
@@ -455,7 +457,9 @@ const TutorSupportPage = () => {
                 <ArrowRight className="h-5 w-5" />
               </Link>
               <Link
-                href="/contact"
+                href="https://wa.me/16478041399?text=Hello,%20what%20tutor%20support%20do%20we%20need%20to%20help%20your%20kid%25with%20today?"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold hover:bg-white/30 transition-all duration-300 inline-flex items-center space-x-2 border-2 border-white/50"
               >
                 <span>Contact Us</span>

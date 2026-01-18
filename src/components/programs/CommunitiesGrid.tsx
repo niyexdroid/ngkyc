@@ -181,7 +181,7 @@ const CommunitiesGrid = () => {
               Take our quick quiz to find the perfect program that matches your
               interests and goals.
             </p>
-            <Link
+            <a
               href="https://forms.gle/NakPm7YUyQBcH87z9"
               target="_blank"
               rel="noopener noreferrer"
@@ -189,7 +189,7 @@ const CommunitiesGrid = () => {
             >
               Take Program Quiz
               <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
