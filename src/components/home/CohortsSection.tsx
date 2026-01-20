@@ -13,7 +13,7 @@ const cohorts = [
     description:
       "Structured reading program with phonics games, storytelling, and interactive learning.",
     ageRange: "Ages 5-7",
-    bgImage: "/images/communities/age 9-11.jpg",
+    bgImage: "/images/communities/GMKR_Cohort_Learning.jpg",
     href: "/programs/gmkr",
     isPaid: true,
   },
@@ -24,7 +24,7 @@ const cohorts = [
     description:
       "Professional training in sales development with real internship opportunities.",
     ageRange: "18+ Only",
-    bgImage: "/images/communities/age 12+.jpg",
+    bgImage: "/images/communities/SDR_BDR_Cohort.jpg",
     href: "/programs/sdr-bdr-training",
     isPaid: true,
   },
